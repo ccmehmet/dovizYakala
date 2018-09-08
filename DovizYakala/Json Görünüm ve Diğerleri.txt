@@ -1,0 +1,4 @@
+https://free.currencyconverterapi.com/api/v6/currencies
+http://free.currencyconverterapi.com/api/v5/convert?q=ALL_TRY&compact=y
+http://jsonviewer.stack.hu/
+https://www.base64-image.de/
