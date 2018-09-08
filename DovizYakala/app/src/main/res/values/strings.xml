@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DovizYakala</string>
+    <string name="oyna">Oyna</string>
+    <string name="dovizdegeri">Döviz Değeri</string>
+    <string name="internetBaglantiSorunuMesaji">İnternet Bağlantınızı Kontrol Ediniz.</string>
+    <string name="degistir">Değiştir</string>
+    <string name="baglantiKesildi">İnternet Bağlantınız Kesildi.</string>
+    <string name="hesapla">Hesapla</string>
+</resources>

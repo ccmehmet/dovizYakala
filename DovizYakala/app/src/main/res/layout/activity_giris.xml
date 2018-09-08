@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Giris">
+
+    <EditText
+        android:id="@+id/dovizDegerTXT"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="127dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/dovizdegeri"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/denemeImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <AutoCompleteTextView
+        android:id="@+id/doviz1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:hint="EUR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <AutoCompleteTextView
+        android:id="@+id/doviz2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="USD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/doviz1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/doviz1"
+        app:layout_constraintTop_toBottomOf="@+id/doviz1"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <ImageView
+        android:id="@+id/doviz_ok_1"
+        android:layout_width="34dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/doviz1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/doviz1"
+        app:layout_constraintTop_toTopOf="@+id/doviz1"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_asagi_ok" />
+
+    <ImageView
+        android:id="@+id/doviz_ok_2"
+        android:layout_width="34dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/doviz2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/doviz2"
+        app:layout_constraintTop_toTopOf="@+id/doviz2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_asagi_ok" />
+
+    <Button
+        android:id="@+id/degistirBTN"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="degistir"
+        android:text="@string/degistir"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toEndOf="@+id/dovizDegerTXT"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="366dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/alert_dark_frame"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:rowCount="3">
+
+        <TextView
+            android:id="@+id/textView1"
+            style="?attr/actionBarPopupTheme"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="122dp"
+            android:layout_height="75dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:fontFamily="@font/dans"
+            android:gravity="fill"
+            android:shadowColor="@android:color/darker_gray"
+            android:text="1"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="normal|bold"
+            tools:ignore="RtlCompat"
+            tools:text="1" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="12dp"
+        android:onClick="oyunaBasla"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintTop_toBottomOf="@+id/degistirBTN" />
+
+    <ImageView
+        android:id="@+id/denemeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dovizDegerTXT"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</android.support.constraint.ConstraintLayout>
